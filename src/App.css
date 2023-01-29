@@ -1,0 +1,12 @@
+.App{
+  background-image: url("./assets/images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: sans-serif;
+}
