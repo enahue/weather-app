@@ -5,8 +5,10 @@ import "./App.css";
 import Loader from "./components/Loader";
 import WeatherCard from "./components/WeatherCard";
 
+console.log(import.meta.env.WEATHER_API_KEY)
 
-const API_KEY = import.meta.env.WEATHER_API_KEY;
+// const API_KEY = import.meta.env.WEATHER_API_KEY;
+const API_KEY ="2eca2941cdf363f2b90c0d12bae27814";
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState();
