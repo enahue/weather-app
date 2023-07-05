@@ -1,10 +1,11 @@
+import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import Loader from "./components/Loader";
 import WeatherCard from "./components/WeatherCard";
 
-const API_KEY = "2eca2941cdf363f2b90c0d12bae27814";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState();
