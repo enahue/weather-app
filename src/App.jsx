@@ -5,7 +5,8 @@ import "./App.css";
 import Loader from "./components/Loader";
 import WeatherCard from "./components/WeatherCard";
 
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
+const API_KEY = import.meta.env.REACT_APP_WEATHER_API_KEY;
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState();
