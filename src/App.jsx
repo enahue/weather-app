@@ -5,7 +5,7 @@ import "./App.css";
 import Loader from "./components/Loader";
 import WeatherCard from "./components/WeatherCard";
 
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+// const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState();
@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     if (coords) {
-      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${API_KEY}`;
+      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
       axios
         .get(URL)
         .then((res) => {
