@@ -7,7 +7,7 @@ import WeatherCard from "./components/WeatherCard";
 
 console.log(import.meta.env.WEATHER_API_KEY)
 
-let API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 function App() {
   const [coords, setCoords] = useState();
