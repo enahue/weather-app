@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-ENV VITE_WEATHER_API_KEY 
+ENV VITE_WEATHER_API_KEY your_api_key_here 
 
 WORKDIR /app
 
